@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Denne demo gør det muligt at oprette, redigere og slette brugere.
+  p API'en har 1 endpoint: 
+    a(href="/api/users") API'en kan tilgås her.
+  ul 
+    li /api/users - GET request viser alle users
+    li /api/users/id - GET request viser en user med det givne id    
+    li /api/users - POST request opretter en user og returnerer et userobject med et id
+    li /api/users/id - PUT request opdaterer user med det givne id  
+    li /api/users/id - DELETE request sletter en user med det givne id
+
+  p Test appen med RESTMan eller Postman
